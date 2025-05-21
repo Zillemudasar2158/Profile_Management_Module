@@ -25,11 +25,11 @@ th{
             <td style="text-align: center;width: 100px">{{ $loop->iteration}}</td>
             <td style="width: 275px">{{$user->projectname}}</td>
             @if($user->projectpath=='Path not avaiable')
-            <td>Problem while uploading project </td>
+            <td>Problem while uploading project. Soon uploading complete</td>
             @else
-            <td>{{$user->projectpath}}</td>
+            <td><a href="{{$user->projectpath}}" target="_blank">{{$user->projectpath}}</a></td>
             @endif
-            @if($user->status==1)
+            @if($user->status==0)
             <td style="width: 100px;text-align: center;">
                 <button class="btn btn-warning">
                     deactive
