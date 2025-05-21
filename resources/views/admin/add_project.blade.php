@@ -22,11 +22,12 @@
   <div class="row content">
     <div class="col-sm-1"></div>    
     <div class="col-sm-10 text-left">         
-      <h1 style="color: #219c9c;text-align: center;">Add Project</h1><br>
-      <div id="dept_data">
+      <h1 style="color: #219c9c;text-align: center;">Add Project</h1><hr><br>
+
+      <div id="dept_data" style="text-align:center">
         <form action="addproj" method="post" enctype="multipart/form-data">
         @csrf
-        <label for="fname">Project Name</label>
+        <label for="fname" style="text-size:20px">Project Name: </label>
         <div id="dept_row_box">
           <div id="dept1">
             <input type="text" class="input" name="projname" placeholder="Enter project name.." required>
@@ -42,7 +43,14 @@
         </select>
           </div>
         </div>
-
+        <label for="projecttype">Project Status</label>
+        <div id="dept_row_box">
+          <div id="dept1">
+            <select id="projectstatus" name="projectstatus">
+          <option value="1">Active</option>
+          <option value="0">Deactive</option>  
+        </select>
+          </div>
         <label for="fname">Add Path</label>
         <div id="dept_row_box">
           <div id="dept1">

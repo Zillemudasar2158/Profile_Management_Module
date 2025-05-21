@@ -10,7 +10,7 @@ th{
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-1"></div>    
-    <div class="col-sm-10 text-left"> 
+    <div class="col-sm-10 text-left">    
       <h1 style="color: #219c9c">PHP projects</h1>
       <hr>
         <table style="width: 100%">
@@ -19,7 +19,7 @@ th{
             <th style="">Project Name</th>
             <th style="">Project links</th>
             <th style="">Path status </th>
-          </tr>           
+          </tr>              
          @foreach($members as $user)
           <tr>
             <td style="text-align: center;width: 100px">{{ $loop->iteration}}</td>

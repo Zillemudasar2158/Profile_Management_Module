@@ -30,6 +30,8 @@ Route::get('/cft',[usercontroller::class,'certificate']);
 
 /* this is admin panel coding */
 Route::post('admin/addproj',[usercontroller::class,'storeproject']);
+
+/* project setting */
 Route::get('php_proj',[usercontroller::class,'showprojectsphp']);
 Route::get('php_lar',[usercontroller::class,'showphplar']);
 Route::get('python',[usercontroller::class,'showpython']);

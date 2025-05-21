@@ -11,8 +11,8 @@
               <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="php_proj">PHP</a></li>
                   <li><a href="php_lar">PHP laravel </a></li>
+                  <li><a href="php_proj">PHP</a></li>
                   <li><a href="python">Python</a></li>
                 </ul>
               </li> 

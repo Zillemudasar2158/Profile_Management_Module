@@ -14,14 +14,15 @@ class usercontroller extends Controller
     function certificate(){
     	return  view('home').view('nav').view('cft');
     }
+
     public function storeproject(Request $r)
     {  
 		$res= new projects;
         $res->id=$r->post('id');
         $res->projectname=$r->input('projname');
         $res->projectpath=$r->input('projpath');
+        $res->status=$r->input('projectstatus');
         $res->projecttype=$r->input('projecttype');
-        $res->status=1;
         $res->save();
 
 		return redirect('admin/add_proj'); 
@@ -30,7 +31,7 @@ class usercontroller extends Controller
     } 
     public function showprojectsphp()
     {
-    	//$data=projects::all();
+    	//$data1=projects::all();
     	$data=DB::table('projects')->where('projecttype','php')->get();
 	  	return view('home').view('nav').view('php',['members'=>$data]);        
     }
