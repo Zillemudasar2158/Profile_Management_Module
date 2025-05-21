@@ -24,7 +24,7 @@ th{
           <tr>
             <td style="text-align: center;width: 100px">{{ $loop->iteration}}</td>
             <td style="width: 275px">{{$user->projectname}}</td>
-            @if($user->projectpath=='Path not avaiable')
+            @if($user->status==0)
             <td>Problem while uploading project. Soon uploading complete</td>
             @else
             <td><a href="{{$user->projectpath}}" target="_blank">{{$user->projectpath}}</a></td>
