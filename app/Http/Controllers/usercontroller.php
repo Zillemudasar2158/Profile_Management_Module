@@ -36,13 +36,11 @@ class usercontroller extends Controller
     }
     public function showphplar()
     {
-    	//$data=projects::all();
     	$data=DB::table('projects')->where('projecttype','phplaravel')->get();
 	  	return view('home').view('nav').view('phplaravel',['members'=>$data]);        
     }
     public function showpython()
     {
-    	//$data=projects::all();
     	$data=DB::table('projects')->where('projecttype','python')->get();
 	  	return view('home').view('nav').view('python',['members'=>$data]);        
     }
